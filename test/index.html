@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jquery Validations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src = "jquery.min.js"></script>
+    <script src = "jquery.validate.min.js"></script>
+  </head>
+  <body>
+    <div class = "container">
+      <h2 style = "text-align: center; color : red">Form Validations using jQuery</h2>
+      <form id = "myform">
+        <div id = "first_step">
+          <label for="" class = "control-label">Name: </label>
+          <input type="text" name = "client_name" id = "client_name" class = "form-control mb-3/><br />
+          <label for="">Telephone : </label>
+          <input type="text" name = "TelephoneNo" id = "TelephoneNo" class = "form-control">
+          <label for="" class = "control-label">Email :</label>
+          <input type="email" name = "email" id = "email" class = "form-control mb-3">
+          <input type="button" class = "btn btn-primary mb-3" value = "Next" id = "next_btn">
+        </div>
+        <div id = "second_step">
+          <label for="">Country :</label>
+          <select name="country"  class = "form-control" id="Country">
+            <option selected val = "">Please Select Country</option>
+            <option val = "IN">India</option>
+            <option val = "AUS">Australia</option>
+            <option val = "CH">China</option>
+          </select>
+
+          <label for="">State : </label>
+          <input type="text" id = "State" name = "State" placeholder="Enter State" class = "form-control">
+
+          <label for="">City : </label>
+          <input type="text" id = "City" name = "City" placeholder="Enter City" class = "form-control"> 
+
+          <label for="">Address1 : </label>
+          <input type="text" id = "Address1" name = "Address1" placeholder="Enter Address1" class = "form-control"> 
+
+          <label for="">Address2 : </label>
+          <input type="text" id = "Address2" name = "Address2" placeholder="Enter Address2" class = "form-control"> 
+
+          <label for="">Address3 : </label>
+          <input type="text" id = "Address3" name = "Address3" placeholder="Enter Address3" class = "form-control"> 
+
+          <label for="">Pincode : </label>
+          <input type="text" id = "Pincode" name = "Pincode" placeholder="Enter Pincode" class = "form-control mb-3"> 
+
+          <input type="button" value = "Prev" class = "btn btn-warning" id = "prev_btn">
+
+          <input type="submit" value = "Validate" class = "btn btn-primary" id = "Submit_btn">
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
